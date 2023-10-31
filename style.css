@@ -1,0 +1,261 @@
+*{
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container{
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+
+
+}
+
+.container form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1) ;
+    padding: 20px;
+    width: 600px;
+    padding-top: 160px;
+}
+
+.container form .inputBox {
+    margin-top: 20px;
+
+}
+
+.container form .inputBox span {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    color: #444;
+
+}
+
+.container form .flex-box {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px; 
+
+}
+
+.container form .flex-box .inputBox{
+    flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    /* background: linear-gradient(45deg , blueviolet, deeppink); */
+    background: linear-gradient(135deg , rgb(255, 187, 0),rgb(248, 252, 4));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s linear;
+
+}
+
+.container form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+
+}
+
+.container .card-container  {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+   
+    /* border-radius: 10px; */
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, .1); */
+
+    
+}
+
+
+.container .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    transform: perspective(1000px) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform .4s ease-out;
+    overflow: hidden;
+
+
+}
+
+ .container .card-container .front img {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+
+} 
+
+
+.container .card-container .front .card-number-box {
+
+    position: absolute;
+    background: linear-gradient(#eee, #999);
+    font-weight: 500;
+    /* background: linear-gradient(#f1e362, #999); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 0;
+    bottom: 85px;
+    left: 50px;
+    font-size: 20px;
+}
+
+.container .card-container .front .card-holder-name{
+    position: absolute; 
+    bottom: 30px;
+    left: 35px;
+    /* color:#C59F49; */
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 15px;
+}
+
+
+.container .card-container .front .expiration {
+    position: absolute;
+    bottom: 50px;
+    left: 180px;
+    font-size: 14px;
+    background: linear-gradient(#eee, #999);
+    /* background: linear-gradient(#f1e362, #999); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.container .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg , rgb(255, 187, 0),rgb(248, 252, 4));
+    border-radius: 10px;
+    padding: 20px 0;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out ;
+
+
+}
+
+.container .card-container .front .expiration .P {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.container .card-container .back .str {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+
+
+}
+
+
+.container .card-container .back .box {
+    padding: 0 20px ; 
+
+
+}
+
+.container .card-container .back .box  span {
+    position: absolute;
+    color: #000;
+    font-size: 12px;
+    right: 70px;
+    top: 10px;
+
+
+    
+
+
+}
+
+.container .card-container .back .box  .text {
+    position: absolute;
+    font-size: 10px;
+    left: 50px;
+}
+
+.container .card-container .back .box .sign {
+
+    position: absolute;
+    font-size: 12px;
+    top: 110px;
+    right: 10px;
+
+}
+.container .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-right: 50px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 75%;
+    text-align: right;
+    background-image: url(image/str.png);
+
+}
+
+.container .card-container .back .box .cvv-box .cvv {
+    position: absolute;
+    font-weight: bold;
+    top: 105px;
+    right: 130px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
